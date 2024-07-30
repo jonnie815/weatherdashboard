@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container" id="search">
+     <h1>Weather Dashboard</h1>
+    <input type="text" id="search-bar" placeholder="Enter city name" />
+    <button id="search-btn">Search</button>
+    <div id="current-weather" class="weather-section">
+      <div class="weather-main">
+        <h2 id="city-name">City 
+        Name</h2>
+        <p id="country">Country</p>
+        <div class="temp">
+          <span id="current-temp">14°C</span>
+          <img id="weather-icon" src="" alt="Weather Icon">
+        </div>
+        <p id="description">Description</p>
+      </div>
+      <div class="temp-details">
+        <p>Temperature:</p>
+        <p>Morning: <span id="morning-temp">14°C</span></p>
+        <p>Afternoon: <span id="afternoon-temp">15°C</span></p>
+        <p>Evening: <span id="evening-temp">14°C</span></p>
+        <p>Night: <span id="night-temp">12°C</span></p>
+      </div>
+    </div>
+
+    <div id="forecast" class="weather-section">
+      <h2>7-Day Forecast</h2>
+      <div id="forecast-list" class="forecast-list"></div>
+    </div>
+
+    <div id="overview" class="weather-section">
+      <h2>Today's Overview</h2>
+      <div class="overview-grid">
+        <div class="overview-item">
+          <h3>Wind Status</h3>
+          <p id="wind-speed">7.50 km/h</p>
+          <p id="wind-direction">Direction</p>
+        </div>
+        <div class="overview-item">
+          <h3>UV Index</h3>
+          <p id="uv-index">5.50 uv</p>
+        </div>
+        <div class="overview-item">
+          <h3>Sunrise and Sunset</h3>
+          <p>Sunrise: <span id="sunrise">6:32 AM</span></p>
+          <p>Sunset: <span id="sunset">5:42 PM</span></p>
+        </div>
+        <div class="overview-item">
+          <h3>Humidity</h3>
+          <p id="humidity">84%</p>
+        </div>
+        <div class="overview-item">
+          <h3>Visibility</h3>
+          <p id="visibility">04 km</p>
+        </div>
+        <div class="overview-item">
+          <h3>Feels Like</h3>
+          <p id="feels-like">42°C</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
